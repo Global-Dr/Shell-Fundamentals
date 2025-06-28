@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # File to store tasks
-TODO_FILE = ~/todo.txt
+TODO_FILE=~/todo.txt
 
 #Create the todo file if it doesn't exist
 if [ ! -f "$TODO_FILE" ]; then
@@ -9,7 +9,7 @@ if [ ! -f "$TODO_FILE" ]; then
 fi
 
 #Keep showing the menu until user exits
-while treu; do
+while true; do
 	echo "----------------------"
 	echo "Ajibola Simple To-Do Manager Task"
 	echo "----------------------"
