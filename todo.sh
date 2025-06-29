@@ -1,7 +1,11 @@
 #!/bin/bash
 
 # File to store tasks
+<<<<<<< HEAD
 TODO_FILE = ~/todo.txt
+=======
+TODO_FILE=~/todo.txt
+>>>>>>> 93106484a80e98d5312e9a4ca90f0a3ebaef03ae
 
 #Create the todo file if it doesn't exist
 if [ ! -f "$TODO_FILE" ]; then
@@ -9,7 +13,11 @@ if [ ! -f "$TODO_FILE" ]; then
 fi
 
 #Keep showing the menu until user exits
+<<<<<<< HEAD
 while treu; do
+=======
+while true; do
+>>>>>>> 93106484a80e98d5312e9a4ca90f0a3ebaef03ae
 	echo "----------------------"
 	echo "Ajibola Simple To-Do Manager Task"
 	echo "----------------------"
