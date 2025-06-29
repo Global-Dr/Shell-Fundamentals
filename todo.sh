@@ -30,23 +30,23 @@ while true; do
 read -p "Choose your choice between [1 - 4]: " choice
 
 #Users choice activities
-if ["$choice" == "1" ]; then
+if [ "$choice" == "1" ]; then
 	echo "This is my first added task with script:"
 	if [ ! -s "$TODO_FILE" ]; then
 		echo "Haa wahala ooo, No task found"
 	else
 		nl "$TODO_FILE"
 	fi
-elif ["$choice" == "2" ]; then
+elif [ "$choice" == "2" ]; then
 	read -p "Add your new task here before i change am for you: " add_new_task
 	echo "$add_new_task" >> "$TODO_FILE"
 	echo "Task added successfully"
-elif ["$choice" == "3" ]; then
+elif [ "$choice" == "3" ]; then
 	nl "$TODO_FILE"
 	read -p "Enter the number of task you want to delete: " task_to_delete
-	sed -i "${task_to_delete}d" "TODO_FILE"
-	echo "Guy, you task has been deleted"
-elif ["$choice" == "4" ]; then
+	sed -i "${task_to_delete}d" "$TODO_FILE"
+	echo "Guy, your task has been deleted"
+elif [ "$choice" == "4" ]; then
 	echo "GOODBYE, WE MOVE"
 	break
 else
